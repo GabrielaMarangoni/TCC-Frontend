@@ -87,7 +87,7 @@ O frontend foi desenvolvido com as seguintes tecnologias:
 - [Remix](https://remixicon.com/)
 
 
-# Variáveis de ambiente
+<!-- # Variáveis de ambiente
 
 Em /Backend/.env existem variáveis usadas para o funcionamento do ambiente do servidor.
 
@@ -97,7 +97,7 @@ Para o envio de email também é necessário trocar variáveis no .env o **USERM
 
 O **PASSMAIL** é uma senha gerada pelo provedor de email, no caso do Gmail siga estes [passos](https://support.google.com/accounts/answer/185833?hl=pt-BR) para saber como gerar uma.
 
-Por fim, **EMAILPRATCC** é a variável que deve contér como valor o email do PRATCC, com essa informação ele poderá receber emails de quem está requisitando novos professores para o sistema.
+Por fim, **EMAILPRATCC** é a variável que deve contér como valor o email do PRATCC, com essa informação ele poderá receber emails de quem está requisitando novos professores para o sistema. -->
 
 # Banco de Dados
 
@@ -127,6 +127,7 @@ O sistema é dividido em duas partes: Geral e Gerenciamento.
 
 O professor tem acesso apenas à parte Geral, que inclui as telas de Dashboard, Alunos, Documentos, Calendário Acadêmico e Minhas Observações. Na parte de Gerenciamento, seu acesso é restrito apenas à criação de Grupos e ao gerenciamento do próprio Perfil.
 
+## Geral 
 
 ### Dashboard
 A tela de Dashboard exibe um resumo do sistema, incluindo a quantidade de alunos, professores e disciplinas cadastradas, além de permitir o monitoramento dos grupos e das observações.
@@ -137,14 +138,18 @@ A tela de Dashboard exibe um resumo do sistema, incluindo a quantidade de alunos
 
 - Acompanhamento Geral: No terceiro card, são listadas as últimas 10 observações feitas em todos os alunos cadastrados. Ao clicar em uma observação, o usuário é redirecionado para a mesma tela do card "Acompanhamento dos Grupos", onde pode visualizar os detalhes e adicionar novas observações.
 
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/dashboard.png" width="100%" tittle=""> </p>
 <p align="center"> <img src="" width="100%" tittle=""> </p>
 <p align="center"> <img src="" width="100%" tittle=""> </p>
 
 ### Alunos
 A tela de Alunos exibe a lista de todos os alunos cadastrados no sistema, apresentando as seguintes informações: RA, nome, telefone, e-mail e a quantidade de observações registradas para cada aluno. Além disso, conta com uma barra de pesquisa, permitindo localizar rapidamente um aluno pelo nome.
 
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/listaAlunos.png" width="100%" tittle=""> </p>
+
+Ao clicar em um aluno, o usuário é redirecionado para o histórico desse estudante. Nesta tela, é possível visualizar todas as observações registradas sobre ele e adicionar uma nova observação diretamente ao aluno. Para facilitar a identificação, as observações feitas pelo usuário logado são destacadas em amarelo.
+
+<p align="center"> <img src="assets/historicoAluno.png" width="100%" tittle=""> </p>
 
 ### Documentos
 A tela de Documentos permite a visualização de todos os arquivos cadastrados no sistema. Nela, os usuários podem acessar, consultar e, se necessário, fazer o download dos documentos disponibilizados pela coordenação. A tela facilita a organização e o acesso rápido a materiais importantes para a gestão acadêmica.
@@ -154,7 +159,7 @@ A tela de Documentos permite a visualização de todos os arquivos cadastrados n
 ### Calendário Acadêmico
 A tela de Calendário Acadêmico permite o acesso ao calendário oficial do curso. Ao clicar na opção disponível, o usuário é redirecionado para uma nova aba com o calendário cadastrado pela coordenação, sem visualizar diretamente o link no sistema.
 
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/abreCalendario.png" width="100%" tittle=""> </p>
 
 ### Minhas Observações
 A tela 'Minhas Observações' permite ao usuário visualizar todas as observações que ele registrou. Além disso, é possível acessar as observações de todos os alunos e filtrar especificamente aquelas dos alunos que estão sendo monitorados em um grupo específico. Nesta tela, o usuário também pode adicionar uma nova observação. 
@@ -163,6 +168,9 @@ A tela 'Minhas Observações' permite ao usuário visualizar todas as observaç�
 <p align="center"> <img src="" width="100%" tittle=""> </p>
 <p align="center"> <img src="" width="100%" tittle=""> </p>
 <p align="center"> <img src="" width="100%" tittle=""> </p>
+
+
+## Gerenciamento
 
 ### Alunos Inativos
 A tela 'Alunos Inativos' exibe a lista de alunos que foram deletados pela coordenação. Quando um aluno é removido, seus dados são armazenados nessa tela, permitindo a visualização de todas as observações registradas para ele. Além disso, a coordenação tem a opção de reativar o aluno, restaurando seu acesso ao sistema.
@@ -174,33 +182,38 @@ A tela 'Alunos Inativos' exibe a lista de alunos que foram deletados pela coorde
 Na tela "Cadastro de Alunos", a tela inicial exibe uma tabela com os alunos já cadastrados, acompanhada de uma barra de pesquisa para localizar um aluno pelo nome. Além disso, há dois botões principais: "Cadastrar" e "Excluir Vários".
 
 Os alunos cadastrados podem ter seus dados editados (exceto o RA) ou serem excluídos manualmente.
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/listaAlunosCad.png" width="100%" tittle="lista dos alunos"> </p>
 
 - Ao clicar em "Cadastrar", o usuário é redirecionado para a tela de cadastro, onde pode optar por cadastrar um único aluno manualmente ou realizar um cadastro coletivo. Para isso, basta copiar e colar os dados diretamente na tela, seguindo o formato: RA, nome, telefone e e-mail, com um aluno por linha e os dados separados por vírgulas.
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+<p > <img src="assets/cadAlunoUnico.png" width="50%" tittle=""> </p>
+<p > <img src="assets/cadAlunoConjunto.png" width="50%" tittle=""> </p>
 
 
 - Ao clicar em "Excluir Vários", o usuário é levado para a tela de exclusão coletiva, onde pode remover múltiplos alunos cadastrados. Para isso, basta copiar e colar uma lista de RAs, um aluno por linhas.
 
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/excluirAluno.png" width="100%" tittle=""> </p>
 
 
 ### Cadastro de Professores 
 Na tela "Cadastro de Professores", a tela inicial exibe uma tabela com os professores já cadastrados, acompanhada de uma barra de pesquisa para localizar um professor pelo nome. Além disso, há um botão principal: "Cadastrar".
 
 Os professores cadastrados podem ter seus dados editados (exceto o e-mail) ou serem excluídos manualmente.
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/listaProfCad.png" width="100%" tittle=""> </p>
 - Ao clicar em "Cadastrar", o usuário é redirecionado para a tela de cadastro, onde pode optar por cadastrar um único professor manualmente ou realizar um cadastro coletivo. Para isso, basta copiar e colar os dados diretamente na tela, seguindo o formato: nome, telefone e e-mail, com um professor por linha e os dados separados por vírgulas.
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/cadProfUnico.png" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/cadProfConjunto.png" width="100%" tittle=""> </p>
 
 ### Cadastro de Disciplinas 
 Na tela "Cadastro de Disciplinas", a tela inicial exibe uma tabela com as disciplinas já cadastradas, juntamente com uma barra de pesquisa para localizar uma disciplina pelo nome. Há também um botão principal: "Cadastrar".
 
 As disciplinas cadastradas podem ter todos os seus dados editados, e a exclusão deve ser feita manualmente.
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/listaDisc.png" width="100%" tittle=""> </p>
 
 Ao clicar em "Cadastrar", o usuário é redirecionado para a tela de cadastro, onde pode optar por cadastrar uma única disciplina manualmente ou realizar um cadastro coletivo. Para isso, basta copiar e colar os dados diretamente na tela, seguindo o formato: nome da disciplina e período, com uma disciplina por linha e os dados separados por vírgulas.
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/cadDiscUnico.png" width="100%" tittle=""> </p>
+
+Cadastro em conjunto segue a mesma lógica dos demais. 
+
 
 ### Cadastro de Documentos 
 Na tela "Cadastro de Documentos", é possível visualizar uma lista com todos os documentos já cadastrados.
@@ -209,13 +222,13 @@ Cada documento pode ser editado ou excluído individualmente, garantindo que as 
 <p align="center"> <img src="" width="100%" tittle=""> </p>
 
 Ao clicar no botão "Cadastrar",o usuário é redirecionado para a tela de cadastro. Nessa tela, o usuário pode adicionar um novo documento informando: titulo do documento, descrição e link. 
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/cadDoc.png" width="100%" tittle=""> </p>
 
 ### Cadastro do Calendário Acadêmico
 Na tela "Cadastro do Calendário Acadêmico", a coordenação cadastra o link do calendário, permitindo que, ao ser clicado na seção "Calendário Acadêmico" do sistema, o usuário seja redirecionado automaticamente para o documento ou página correspondente.
 
 Caso precise editar o link posteriormente, basta acessar essa tela e atualizar a informação.
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/cadCalendario.png" width="100%" tittle="calendario"> </p>
 
 ### Grupos
 Na tela "Grupos", tanto o coordenador quanto o professor têm acesso. Essa tela permite a criação de grupos para monitoramento de alunos.
@@ -230,19 +243,20 @@ Na tela principal de grupos, é possível visualizar todos os grupos cadastrados
 - Número total de alunos
 - Também é possível editar ou excluir um grupo.
 
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/todosGrupos.png" width="100%" tittle="grupos"> </p>
 
 Ao clicar no botão "Mostrar mais", o usuário é direcionado para uma tela detalhada do grupo, onde pode visualizar uma tabela completa contendo:
 
 - A lista de todos os alunos pertencentes ao grupo
 - A quantidade de observações recebidas por cada aluno
+
 Opções para:
 - Remover um aluno do grupo
 - Visualizar todas as observações registradas para um aluno
 - Adicionar uma nova observação diretamente no sistema
 
 Além disso, nesta tela, há um botão dedicado para editar o grupo, permitindo que o usuário altere informações como nome e composição do grupo.
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/telaGrupo.png" width="100%" tittle=""> </p>
 
 ### Meu Perfil
 Na tela "Meu Perfil", tanto o coordenador quanto o professor têm acesso. Nesta tela, é possível:
@@ -251,5 +265,3 @@ Visualizar o nome e o e-mail cadastrados
 Alterar a senha, garantindo mais segurança para o usuário
 As informações de nome e e-mail são apenas para consulta, enquanto a senha pode ser modificada conforme necessário.
 <p align="center"> <img src="assets/perfil.png" width="100%" tittle="meu perfil"> </p>
-
-

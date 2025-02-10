@@ -122,7 +122,7 @@ export default function AddAlunos() {
       <Sidebar />
       <div className={divRegister}>
         <div className="flex  justify-between pb-10	">
-          <h1 className={textTitle}>Cadastro dos alunos</h1>
+          <h1 className={textTitle}>Excluir alunos</h1>
           <Button
             onClick={hadleBack}
             bg="bg-warning"
