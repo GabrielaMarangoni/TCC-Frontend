@@ -132,15 +132,16 @@ O professor tem acesso apenas à parte Geral, que inclui as telas de Dashboard, 
 ### Dashboard
 A tela de Dashboard exibe um resumo do sistema, incluindo a quantidade de alunos, professores e disciplinas cadastradas, além de permitir o monitoramento dos grupos e das observações.
 
+<p align="center"> <img src="assets/dashboard.png" width="100%" tittle=""> </p>
+
 - Grupo: No primeiro card, são listados todos os grupos criados pelo usuário, juntamente com a quantidade de alunos em cada um. Ao clicar em um grupo, o usuário é redirecionado para a tela de observações, onde pode visualizar os alunos que estão sendo monitorados.
 
-- Acompanhamento dos Grupos: No segundo card, são listadas as últimas 10 observações feitas nos alunos que o usuário está monitorando. Ao clicar em uma observação, o usuário é redirecionado para a tela do aluno, onde pode visualizar todas as suas observações. Nessa tela, são exibidos o nome do aluno, a matéria, o período e o usuário que registrou a observação. Se o aluno pertence a algum grupo, essa informação também será exibida. Além disso, é possível adicionar uma nova observação para esse aluno.
+<p align="center"> <img src="assets/dashGrupo.png" width="100%" tittle=""> </p>
+- Acompanhamento dos Grupos: No segundo card, são listadas as últimas 10 observações feitas nos alunos que o usuário está monitorando. Ao clicar em uma observação, o usuário é redirecionado para a tela do aluno, onde pode visualizar todas as suas observações. Nessa tela, são exibidos o nome do aluno, a matéria, o período e o usuário que registrou a observação. Se o aluno pertence a algum grupo, essa informação também será exibida. Além disso, é possível adicionar uma nova observação para esse aluno. E, para facilitar a identificação, as observações feitas pelo usuário logado são destacadas em amarelo.
+<p align="center"> <img src="assets/historicoAluno.png" width="100%" tittle=""> </p>
 
 - Acompanhamento Geral: No terceiro card, são listadas as últimas 10 observações feitas em todos os alunos cadastrados. Ao clicar em uma observação, o usuário é redirecionado para a mesma tela do card "Acompanhamento dos Grupos", onde pode visualizar os detalhes e adicionar novas observações.
 
-<p align="center"> <img src="assets/dashboard.png" width="100%" tittle=""> </p>
-<p align="center"> <img src="" width="100%" tittle=""> </p>
-<p align="center"> <img src="" width="100%" tittle=""> </p>
 
 ### Alunos
 A tela de Alunos exibe a lista de todos os alunos cadastrados no sistema, apresentando as seguintes informações: RA, nome, telefone, e-mail e a quantidade de observações registradas para cada aluno. Além disso, conta com uma barra de pesquisa, permitindo localizar rapidamente um aluno pelo nome.
@@ -159,15 +160,24 @@ A tela de Documentos permite a visualização de todos os arquivos cadastrados n
 ### Calendário Acadêmico
 A tela de Calendário Acadêmico permite o acesso ao calendário oficial do curso. Ao clicar na opção disponível, o usuário é redirecionado para uma nova aba com o calendário cadastrado pela coordenação, sem visualizar diretamente o link no sistema.
 
-<p align="center"> <img src="assets/abreCalendario.png" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/abreCalendario.png" width="50%" tittle=""> </p>
 
 ### Minhas Observações
 A tela 'Minhas Observações' permite ao usuário visualizar todas as observações que ele registrou. Além disso, é possível acessar as observações de todos os alunos e filtrar especificamente aquelas dos alunos que estão sendo monitorados em um grupo específico. Nesta tela, o usuário também pode adicionar uma nova observação. 
 
-<p align="center"> <img src="" width="100%" tittle=""> </p>
-<p align="center"> <img src="" width="100%" tittle=""> </p>
-<p align="center"> <img src="" width="100%" tittle=""> </p>
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+Na tela seguinte, são exibidas exclusivamente as observações registradas pelo usuário logado.
+<p align="center"> <img src="assets/todasOBS.png" width="100%" tittle=""> </p>
+
+Na segunda tela, são exibidas todas as observações registradas para todos os alunos, independentemente de estarem em um grupo criado pelo usuário.
+<p align="center"> <img src="assets/todasOBSgrupo.png" width="100%" tittle=""> </p>
+
+Ao clicar em "Todas as observações", um seletor é exibido com duas opções: "Observações de todos os alunos" e "Observações dos meus grupos".
+
+Ao selecionar a segunda opção, a tela passa a exibir apenas as observações dos alunos que pertencem a algum dos grupos criados pelo usuário.
+<p align="center"> <img src="assets/obsTodosGrupos.png" width="100%" tittle=""> </p>
+
+Ao selecionar a segunda opção do select ("Observações dos meus grupos"), um segundo seletor é exibido automaticamente. Nele, o usuário pode optar por visualizar as observações de todos os grupos ou filtrar por um grupo específico.
+<p align="center"> <img src="assets/obsGrupoEsp.png" width="100%" tittle=""> </p>
 
 
 ## Gerenciamento
