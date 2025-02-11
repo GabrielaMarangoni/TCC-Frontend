@@ -39,6 +39,7 @@ Este sistema foi desenvolvido para auxilar a Coordenação e os Professores do C
     <ul>
       <li><a href="#visão-do-professor">Visão do professor</a></li>
       <li><a href="#visão-da-coordenação">Visão da coordenação</a></li>
+      <li><a href="#tela-de-login-e-recuperação-de-senha">Tela de Login e Recuperação de Senha</a></li>
     </ul>
   </li>
   <li>
@@ -49,8 +50,6 @@ Este sistema foi desenvolvido para auxilar a Coordenação e os Professores do C
   </li>
   <li><a href="#instalação">INSTALAÇÃO</a></li>
 </ul>
-
-
 
 
 # INTRODUÇÃO
@@ -94,9 +93,6 @@ Com o Sistema de Gestão para Observações Pedagógicas, esse professor pode:
 Dessa forma, o sistema permite um acompanhamento mais estruturado e eficaz dos alunos autistas, garantindo que cada professor tenha acesso às informações necessárias para oferecer o suporte adequado, mesmo que esses estudantes estejam distribuídos em diferentes períodos e disciplinas.
 
 ## DOCUMENTAÇÃO
-
-
-
 
 ### Diagrama de Caso de Uso do Sistema  
 
@@ -223,7 +219,7 @@ A tela de Calendário Acadêmico permite o acesso ao calendário oficial do curs
 
 ### Documentos
 A tela de Documentos permite a visualização de todos os arquivos cadastrados no sistema. Nela, os usuários podem acessar, consultar e fazer o download dos documentos disponibilizados pela coordenação. A tela facilita a organização e o acesso rápido a materiais importantes para a gestão acadêmica.
-<p align="center"> <img src="assets/" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/telaDoc.png" width="100%" tittle=""> </p>
 
 
 ## Visão da coordenação
@@ -251,7 +247,7 @@ A tela de "Conjunto de Alunos" permite à coordenação registrar grupos de estu
 
 ### Alunos Inativos
 A tela 'Alunos Inativos' exibe a lista de alunos que foram deletados. Quando um aluno é removido, seus dados são armazenados nessa tela, permitindo a visualização de todas as observações registradas para ele. Além disso, tem a opção de reativar o aluno, restaurando seus dados ao sistema.
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/alunosInativos.png" width="100%" tittle=""> </p>
 
 
 ### Cadastro de Professores 
@@ -296,7 +292,15 @@ Na tela "Cadastro de Documentos", é possível visualizar uma lista com todos os
 Ao clicar no botão "Cadastrar",o usuário é redirecionado para a tela de cadastro. Nessa tela, o usuário pode adicionar um novo documento informando: titulo do documento, descrição e link. 
 <p align="center"> <img src="assets/cadDoc.png" width="100%" tittle=""> </p>
 
+## Tela de Login e Recuperação de Senha
+A tela de login permite que usuários acessem o sistema utilizando suas credenciais. 
+<p align="center"> <img src="assets/login.png.png" width="100%" tittle=""> </p>
 
+Caso o usuário esqueça a senha, há a opção de redefinição, onde ele informa seu e-mail cadastrado e recebe um link para criar uma nova senha. 
+<p align="center"> <img src="assets/recuperacaoSenha.png" width="100%" tittle=""> </p>
+
+Após clicar no link de recuperação de senha enviado por e-mail, o usuário é redirecionado para a tela de redefinição de senha.
+<p align="center"> <img src="assets/alterarSenha.png" width="100%" tittle=""> </p>
 
 # ARQUITETURA 
 
@@ -321,6 +325,7 @@ O frontend foi desenvolvido com as seguintes tecnologias:
 - [ReactJS](https://reactjs.org/)
 - [Axios](https://github.com/axios/axios)
 - [Tailwind CSS](https://tailwindcss.com)
+- [Chakra](https://chakra-ui.com/docs/components)
 - [ESlint](https://eslint.org/)
 - [Remix](https://remixicon.com/)
 
