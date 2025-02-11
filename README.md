@@ -188,7 +188,7 @@ Na tela principal, são exibidas exclusivamente as observações registradas pel
 <p align="center"> <img src="assets/minhasOBS.png" width="100%" tittle=""> </p>
 
 Ao clicar em "Todas as observações", um seletor é exibido com duas opções: "Observações de todos os alunos" e "Observações dos meus grupos". Por padrão, a opção "Observações de todos os alunos" é selecionada, exibindo todas as observações registradas para qualquer aluno, independentemente de estarem em um grupo criado pelo usuário.
-<p align="center"> <img src="assets/todasObs.png" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/obsTodas.png" width="100%" tittle=""> </p>
 
 Ao selecionar a opção "Observações dos meus grupos", a tela passa a exibir exclusivamente as observações dos alunos que fazem parte de algum dos grupos criados pelo usuário, facilitando o acompanhamento direcionado desses estudantes.
 <p align="center"> <img src="assets/obsTodosGrupos.png" width="100%" tittle=""> </p>
