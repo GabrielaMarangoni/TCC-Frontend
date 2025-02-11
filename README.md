@@ -31,11 +31,10 @@ Este sistema foi desenvolvido para auxilar a Coordenação e os Professores do C
 </ul>
 </b></p>
 
-# Instalação
 
-Clique no link abaixo para acessar o passo a passo da instalação do sistema
 
-[Instalação](Backend/readme.md)
+
+
 
 # Introdução
 
@@ -43,61 +42,60 @@ A Universidade Tecnológica Federal do Paraná (UTFPR), criada em 1909 como Esco
 
 A transformação em universidade trouxe desafios à coordenação do curso, especialmente no acompanhamento dos adolescentes, que vivem uma fase de transições cognitivas, físicas e emocionais. Essa realidade exige maior apoio psicossocial e envolvimento das famílias.
 
-O conselho de classe pode ser uma ferramenta essencial para identificar dificuldades, acompanhar o desempenho escolar, oferecer suporte e definir estratégias pedagógicas. Porém, a estrutura organizacional da universidade, com professores de diferentes departamentos, dificulta a implementação de um modelo tradicional de conselho de classe.
+Em um ambiente tradicional, o conselho de classe é uma ferramenta essencial para identificar dificuldades, acompanhar o desempenho escolar, oferecer suporte e definir estratégias pedagógicas. Porém, a estrutura organizacional da universidade, com professores de diferentes departamentos, dificulta a implementação de um modelo tradicional do mesmo.  
 
-Diante deste cenário, este trabalho tem como objetivo o desenvolvimento de um sistema web para prover um ambiente online que permita à coordenação, juntamente com os professores, realizar atividades semelhantes às de um conselho de classe tradicional. O sistema busca proporcionar uma comunicação mais eficiente e direta entre os professores e a coordenação do curso, atendendo às necessidades e demandas de maneira mais eficaz.
+Diante deste cenário, o Sistema de Gestão para Observações Pedagógicas foi desenvolvido para suprir essa necessidade, proporcionando um espaço estruturado para registrar e acompanhar observações sobre os alunos. O sistema não substitui o conselho de classe, mas oferece um meio contínuo para que a coordenação e os professores monitorem o desempenho dos estudantes, criem grupos de acompanhamento e compartilhem informações relevantes por meio das observações registradas. Dessa forma, facilita a identificação de dificuldades e a implementação de estratégias pedagógicas mais eficazes.
+
 
 Entre os principais objetivos do sistema, destacam-se:
 
-- Realizar e trocar observações sobre os alunos;
-- Criar grupos de monitoramento para acompanhamento dos alunos.
+- Permitir que a coordenação e os professores registrem e compartilhem observações sobre o desempenho e comportamento dos alunos, facilitando o acompanhamento individual.
+- Criar grupos de monitoramento, onde os professores e a coordenação podem adicionar alunos para acompanhamento específico, registrando e acessando observações relacionadas a cada estudante dentro do grupo.
 
-# Processo
+### Cenário: Acompanhamento de Alunos Autistas 
+Em uma universidade, um professor leciona para diversas turmas em períodos diferentes e tem alunos autistas matriculados em suas disciplinas. Como esses alunos possuem necessidades específicas e desafios distintos, é essencial que o professor consiga registrar e acompanhar suas dificuldades, progresso e adaptações necessárias ao longo do semestre.
 
-A Figura a seguir apresenta o Diagrama de Caso de Uso, destacando os processos utilizados pelo professor e pela coordenação.
+Com o Sistema de Gestão para Observações Pedagógicas, esse professor pode:
+
+1- Criar Grupos de Monitoramento 
+- Caso perceba que vários alunos autistas enfrentam desafios semelhantes, o professor pode criar um grupo específico para monitoramento desses estudantes, facilitando o acompanhamento das estratégias adotadas e a troca de informações com outros docentes.
+
+2 - Registrar Observações Individuais
+- Durante as aulas, sempre que notar um comportamento relevante, dificuldade acadêmica ou necessidade de adaptação, o professor pode registrar uma observação sobre o aluno diretamente no sistema.
+
+3 - Notificação para Professores e Coordenação
+- Sempre que uma nova observação for adicionada sobre um aluno, todos os professores que o possuem em grupos de  monitoramento serão notificados.
+- Além disso, a coordenação também recebe a notificação, mesmo que o aluno não esteja em um grupo criado por ela, garantindo uma visão ampla do acompanhamento acadêmico.
+
+4 - Acessar um Histórico Completo
+- O sistema permite que tanto professores quanto a coordenação acessem um histórico completo das
+ observações feitas anteriormente sobre um aluno, tanto por ele quanto por outros professores, para entender melhor o histórico acadêmico e comportamental desse estudante ao longo do tempo.
+
+5 - Facilitar na Comunicação
+- Com todas as informações registradas e acessíveis, a coordenação pode tomar decisões mais assertivas e sugerir intervenções quando necessário, além de fornecer suporte adequado aos professores.
+
+Dessa forma, o sistema permite um acompanhamento mais estruturado e eficaz dos alunos autistas, garantindo que cada professor tenha acesso às informações necessárias para oferecer o suporte adequado, mesmo que esses estudantes estejam distribuídos em diferentes períodos e disciplinas.
+
+# DOCUMENTAÇÃO
+
+
+
+
+### Diagrama de Caso de Uso do Sistema  
+
+Para melhor compreensão das funcionalidades do sistema, a Figura a seguir apresenta o Diagrama de Caso de Uso, destacando os processos utilizados pelo professor e pela coordenação.
 <img  style="margin: 0 10px;" alt="bd-img" src="assets/diagrama.png" />
+A seguir, são detalhadas as principais ações disponíveis no sistema:
 
+- **Gerenciar os alunos inativos** (Coordenação): Tela onde ficam os alunos deletados, permitindo acesso ao histórico e a opção de restaurá-los.
+- **Gerenciar os alunos** (Coordenação): Cadastra novos alunos no sistema.
+- **Gerenciar os professores** (Coordenação): Cadastra novos professores no sistema.
+- **Gerenciar as disciplinas** (Coordenação): Cadastra e administra as disciplinas disponíveis.
+- **Gerenciar os documentos** (Coordenação): Cadastra e organiza documentos institucionais.
+- **Gerenciar o calendário acadêmico** (Coordenação): Registra e mantém atualizado o link do calendário acadêmico.
+- **Gerenciar grupos** (Professores e Coordenação): Cria grupos de monitoramento para acompanhamento dos alunos.
+- **Adicionar uma observação ao aluno** (Professores e Coordenação): Registra observações sobre o desempenho e comportamento dos alunos.
 
-
-
-
-# Arquitetura
-
-O sistema está estruturado com uma arquitetura de back-end e front-end. A Figura a seguir ilustra a arquitetura e as tecnologias utilizadas em cada parte.
-
-<p align="center">
-    <img src="assets/arquitetura.png" width="100%" tittle="arquitetura">
-</p>
-
-# Tecnologias:
-
-O backend deste projeto foi desenvolvido com as seguintes tecnologias:
-
-- [Node.Js](https://nodejs.org/en/about)
-- [Prisma](https://www.prisma.io/)
-
-
-O frontend foi desenvolvido com as seguintes tecnologias:
-
-- [Next.js](https://nextjs.org)
-- [ReactJS](https://reactjs.org/)
-- [Axios](https://github.com/axios/axios)
-- [Tailwind CSS](https://tailwindcss.com)
-- [ESlint](https://eslint.org/)
-- [Remix](https://remixicon.com/)
-
-
-<!-- # Variáveis de ambiente
-
-Em /Backend/.env existem variáveis usadas para o funcionamento do ambiente do servidor.
-
-A primeira delas é a **DATABASE_URL**, a url da base de dados, se for utilizar outra base, é necessário alterar este link pelo da base que deseja utilizar.
-
-Para o envio de email também é necessário trocar variáveis no .env o **USERMAIL** deve ser substituído pelo email que irá enviar emails no sistema.
-
-O **PASSMAIL** é uma senha gerada pelo provedor de email, no caso do Gmail siga estes [passos](https://support.google.com/accounts/answer/185833?hl=pt-BR) para saber como gerar uma.
-
-Por fim, **EMAILPRATCC** é a variável que deve contér como valor o email do PRATCC, com essa informação ele poderá receber emails de quem está requisitando novos professores para o sistema. -->
 
 # Banco de Dados
 
@@ -118,75 +116,103 @@ A modelagem segue boas práticas de normalização, utilizando UUIDs para garant
 
 
 
-# Interface do Sistema: Telas e Finalidades
+# Interface do Sistema de Gestão para Observações Pedagógicas: Telas e Finalidades
+O Sistema de Gestão para Observações Pedagógicas foi desenvolvido para proporcionar um ambiente organizado e funcional, permitindo que professores e coordenação acompanhem o desempenho dos alunos.
 
-O sistema é dividido em duas partes: Geral e Gerenciamento.
+## Visão do professor
+Os professores podem criar grupos de monitoramento para acompanhar mais de perto determinados alunos e registrar observações sobre seu desempenho e comportamento. Sempre que uma nova observação é feita sobre um aluno que faz parte de um grupo, um e-mail é enviado automaticamente para o usuário, notificando-o sobre a nova observação recebida, garantindo um acompanhamento mais ágil e eficiente.
+<p align="center"> <img src="assets/notificacaoObs.jpg" width="50%" tittle="grupos"> </p>
 
-- Na parte Geral, estão as telas de Dashboard, Alunos, Documentos, Calendário Acadêmico e Minhas Observações.
-- No Gerenciamento, encontram-se Alunos Inativos e os módulos para Cadastro de Alunos, Professores, Disciplinas, Documentos e Calendário Acadêmico, além das funcionalidades de criação de Grupos e gerenciamento do Meu Perfil.
 
-O professor tem acesso apenas à parte Geral, que inclui as telas de Dashboard, Alunos, Documentos, Calendário Acadêmico e Minhas Observações. Na parte de Gerenciamento, seu acesso é restrito apenas à criação de Grupos e ao gerenciamento do próprio Perfil.
-
-## Geral 
+A seguir, são apresentadas as telas do sistema, destacando suas principais funcionalidades:
 
 ### Dashboard
 A tela de Dashboard exibe um resumo do sistema, incluindo a quantidade de alunos, professores e disciplinas cadastradas, além de permitir o monitoramento dos grupos e das observações.
 
 <p align="center"> <img src="assets/dashboard.png" width="100%" tittle=""> </p>
 
-- Grupo: No primeiro card, são listados todos os grupos criados pelo usuário, juntamente com a quantidade de alunos em cada um. Ao clicar em um grupo, o usuário é redirecionado para a tela de observações, onde pode visualizar os alunos que estão sendo monitorados.
+- Grupo: No primeiro card, são exibidos todos os grupos criados pelo usuário, juntamente com a quantidade de alunos em cada um. Ao selecionar um grupo, o usuário é redirecionado para a tela de observações daquele grupo, onde pode visualizar todas as observações já registradas para os alunos e adicionar novas, se necessário. Note que as observações feitas pelo usuário logado estão destacadas em amarelo, facilitando sua identificação.
 
 <p align="center"> <img src="assets/dashGrupo.png" width="100%" tittle=""> </p>
-- Acompanhamento dos Grupos: No segundo card, são listadas as últimas 10 observações feitas nos alunos que o usuário está monitorando. Ao clicar em uma observação, o usuário é redirecionado para a tela do aluno, onde pode visualizar todas as suas observações. Nessa tela, são exibidos o nome do aluno, a matéria, o período e o usuário que registrou a observação. Se o aluno pertence a algum grupo, essa informação também será exibida. Além disso, é possível adicionar uma nova observação para esse aluno. E, para facilitar a identificação, as observações feitas pelo usuário logado são destacadas em amarelo.
-<p align="center"> <img src="assets/historicoAluno.png" width="100%" tittle=""> </p>
+- Acompanhamento dos Grupos: No segundo card, são listadas as 10 últimas observações feitas nos alunos monitorados pelo usuário. Ao clicar em uma observação, o usuário é redirecionado para a tela do histórico do aluno, onde pode visualizar todas as observações registradas. Nessa tela, além do nome do aluno em destaque, as observações são exibidas com o nome da disciplina, o período e o usuário que fez o registro. Caso o aluno pertença a algum grupo, essa informação também será exibida. Além disso, o usuário pode adicionar uma nova observação para o aluno. Lembrando que as observações feitas pelo usuário logado estão destacadas em amarelo, facilitando sua identificação.
 
-- Acompanhamento Geral: No terceiro card, são listadas as últimas 10 observações feitas em todos os alunos cadastrados. Ao clicar em uma observação, o usuário é redirecionado para a mesma tela do card "Acompanhamento dos Grupos", onde pode visualizar os detalhes e adicionar novas observações.
+<p align="center"> <img src="assets/historicoAluno.png" width="100%" tittle=""> </p>
+- Acompanhamento Geral: No terceiro card, são listadas as 10 últimas observações feitas em todos os alunos cadastrados. Ao clicar em uma observação, o usuário é redirecionado para a mesma tela do card "Acompanhamento dos Grupos", onde pode visualizar os detalhes e adicionar novas observações.
+
+
+### Grupos
+A tela "Grupos" permite a criação e o monitoramento de alunos em grupos específicos. Nela, são exibidos todos os grupos cadastrados, juntamente com:
+
+- Nome do grupo;
+- Data de criação;
+- Alguns alunos do grupo;
+- Número total de alunos.
+
+Também é possível editar ou excluir um grupo.
+
+<p align="center"> <img src="assets/todosGrupos.png" width="100%" tittle="grupos"> </p>
+
+Ao clicar no botão "Mostrar mais", o usuário é direcionado para uma tela detalhada do grupo, onde pode visualizar uma tabela completa contendo:
+
+- A lista de todos os alunos pertencentes ao grupo;
+- A quantidade de observações recebidas por cada aluno.
+
+Opções para:
+- Remover um aluno do grupo;
+- Visualizar todas as observações registradas para um aluno;
+- Adicionar uma nova observação diretamente no sistema.
+
+Além disso, nesta tela, há um botão dedicado para editar o grupo, permitindo que o usuário altere informações como nome e composição do grupo.
+<p align="center"> <img src="assets/telaGrupo.png" width="100%" tittle=""> </p>
+
+
+### Minhas Observações
+A tela 'Minhas Observações' permite ao usuário visualizar todas as observações que ele registrou, independentemente de o aluno estar em um grupo ou não. Além disso, é possível acessar as observações de todos os alunos e filtrar especificamente aquelas dos alunos que estão sendo monitorados em um grupo específico. Nesta tela, o usuário também pode adicionar uma nova observação. 
+
+
+Na tela principal, são exibidas exclusivamente as observações registradas pelo usuário logado.
+<p align="center"> <img src="assets/minhasOBS.png" width="100%" tittle=""> </p>
+
+Ao clicar em "Todas as observações", um seletor é exibido com duas opções: "Observações de todos os alunos" e "Observações dos meus grupos". Por padrão, a opção "Observações de todos os alunos" é selecionada, exibindo todas as observações registradas para qualquer aluno, independentemente de estarem em um grupo criado pelo usuário.
+<p align="center"> <img src="assets/todasObs.png" width="100%" tittle=""> </p>
+
+Ao selecionar a opção "Observações dos meus grupos", a tela passa a exibir exclusivamente as observações dos alunos que fazem parte de algum dos grupos criados pelo usuário, facilitando o acompanhamento direcionado desses estudantes.
+<p align="center"> <img src="assets/obsTodosGrupos.png" width="100%" tittle=""> </p>
+
+Ao selecionar a segunda opção do select ("Observações dos meus grupos"), um segundo select é exibido automaticamente. Nele, o usuário pode optar por visualizar as observações de todos os grupos (que vem por padrão) ou filtrar por um grupo específico.
+<p align="center"> <img src="assets/obsGrupoEsp.png" width="100%" tittle=""> </p>
 
 
 ### Alunos
 A tela de Alunos exibe a lista de todos os alunos cadastrados no sistema, apresentando as seguintes informações: RA, nome, telefone, e-mail e a quantidade de observações registradas para cada aluno. Além disso, conta com uma barra de pesquisa, permitindo localizar rapidamente um aluno pelo nome.
-
 <p align="center"> <img src="assets/listaAlunos.png" width="100%" tittle=""> </p>
 
-Ao clicar em um aluno, o usuário é redirecionado para o histórico desse estudante. Nesta tela, é possível visualizar todas as observações registradas sobre ele e adicionar uma nova observação diretamente ao aluno. Para facilitar a identificação, as observações feitas pelo usuário logado são destacadas em amarelo.
 
+ Ao clicar em um aluno, o usuário é redirecionado para a tela do histórico do aluno, onde pode visualizar todas as observações registradas. Nessa tela, além do nome do aluno em destaque, as observações são exibidas com o nome da disciplina, o período e o usuário que fez o registro. Caso o aluno pertença a algum grupo, essa informação também será exibida. Além disso, o usuário pode adicionar uma nova observação diretamente ao aluno. Lembrando que as observações feitas pelo usuário logado estão destacadas em amarelo, facilitando sua identificação.
 <p align="center"> <img src="assets/historicoAluno.png" width="100%" tittle=""> </p>
 
-### Documentos
-A tela de Documentos permite a visualização de todos os arquivos cadastrados no sistema. Nela, os usuários podem acessar, consultar e, se necessário, fazer o download dos documentos disponibilizados pela coordenação. A tela facilita a organização e o acesso rápido a materiais importantes para a gestão acadêmica.
 
-<p align="center"> <img src="" width="100%" tittle=""> </p>
+### Meu Perfil
+Na tela "Meu Perfil", é possível:
+
+- Visualizar o nome e o e-mail cadastrados, sendo somente para consulta;
+- Alterar a senha, caso necessário, garantindo mais segurança para o usuário.
+<p align="center"> <img src="assets/perfil.png" width="100%" tittle="meu perfil"> </p>
 
 ### Calendário Acadêmico
 A tela de Calendário Acadêmico permite o acesso ao calendário oficial do curso. Ao clicar na opção disponível, o usuário é redirecionado para uma nova aba com o calendário cadastrado pela coordenação, sem visualizar diretamente o link no sistema.
+<p align="center"> <img src="assets/abreCalendario.png" width="40%" tittle=""> </p>
 
-<p align="center"> <img src="assets/abreCalendario.png" width="50%" tittle=""> </p>
-
-### Minhas Observações
-A tela 'Minhas Observações' permite ao usuário visualizar todas as observações que ele registrou. Além disso, é possível acessar as observações de todos os alunos e filtrar especificamente aquelas dos alunos que estão sendo monitorados em um grupo específico. Nesta tela, o usuário também pode adicionar uma nova observação. 
-
-Na tela seguinte, são exibidas exclusivamente as observações registradas pelo usuário logado.
-<p align="center"> <img src="assets/todasOBS.png" width="100%" tittle=""> </p>
-
-Na segunda tela, são exibidas todas as observações registradas para todos os alunos, independentemente de estarem em um grupo criado pelo usuário.
-<p align="center"> <img src="assets/todasOBSgrupo.png" width="100%" tittle=""> </p>
-
-Ao clicar em "Todas as observações", um seletor é exibido com duas opções: "Observações de todos os alunos" e "Observações dos meus grupos".
-
-Ao selecionar a segunda opção, a tela passa a exibir apenas as observações dos alunos que pertencem a algum dos grupos criados pelo usuário.
-<p align="center"> <img src="assets/obsTodosGrupos.png" width="100%" tittle=""> </p>
-
-Ao selecionar a segunda opção do select ("Observações dos meus grupos"), um segundo seletor é exibido automaticamente. Nele, o usuário pode optar por visualizar as observações de todos os grupos ou filtrar por um grupo específico.
-<p align="center"> <img src="assets/obsGrupoEsp.png" width="100%" tittle=""> </p>
+### Documentos
+A tela de Documentos permite a visualização de todos os arquivos cadastrados no sistema. Nela, os usuários podem acessar, consultar e fazer o download dos documentos disponibilizados pela coordenação. A tela facilita a organização e o acesso rápido a materiais importantes para a gestão acadêmica.
+<p align="center"> <img src="assets/" width="100%" tittle=""> </p>
 
 
-## Gerenciamento
+## Visão da coordenação
+A coordenação, além de contar com todas as funcionalidades disponíveis para os professores, possui acesso a ferramentas administrativas, como o gerenciamento de alunos, professores, disciplinas, documentos e calendário acadêmico. Essas funcionalidades estão destacadas na imagem a seguir com um retângulo vermelho. Além disso, a coordenação recebe notificações sobre todas as novas observações registradas, independentemente de estar ou não em um grupo de monitoramento, garantindo um acompanhamento mais amplo do desempenho dos alunos. Para a coordenação, os grupos funcionam apenas como uma forma prática de organizar os alunos que deseja acompanhar de perto.
+<p align="center"> <img src="assets/dashCoordenacao.png" width="100%" tittle=""> </p>
 
-### Alunos Inativos
-A tela 'Alunos Inativos' exibe a lista de alunos que foram deletados pela coordenação. Quando um aluno é removido, seus dados são armazenados nessa tela, permitindo a visualização de todas as observações registradas para ele. Além disso, a coordenação tem a opção de reativar o aluno, restaurando seu acesso ao sistema.
-
-<p align="center"> <img src="" width="100%" tittle=""> </p>
-
+A seguir, são apresentadas as telas exclusivas da coordenação, destacando suas principais funcionalidades administrativas:
 
 ### Cadastro de Alunos
 Na tela "Cadastro de Alunos", a tela inicial exibe uma tabela com os alunos já cadastrados, acompanhada de uma barra de pesquisa para localizar um aluno pelo nome. Além disso, há dois botões principais: "Cadastrar" e "Excluir Vários".
@@ -194,24 +220,33 @@ Na tela "Cadastro de Alunos", a tela inicial exibe uma tabela com os alunos já 
 Os alunos cadastrados podem ter seus dados editados (exceto o RA) ou serem excluídos manualmente.
 <p align="center"> <img src="assets/listaAlunosCad.png" width="100%" tittle="lista dos alunos"> </p>
 
-- Ao clicar em "Cadastrar", o usuário é redirecionado para a tela de cadastro, onde pode optar por cadastrar um único aluno manualmente ou realizar um cadastro coletivo. Para isso, basta copiar e colar os dados diretamente na tela, seguindo o formato: RA, nome, telefone e e-mail, com um aluno por linha e os dados separados por vírgulas.
+- Ao clicar em "Cadastrar", o usuário é redirecionado para a tela de cadastro, onde pode optar por cadastrar um único aluno manualmente ou realizar um cadastro coletivo. 
 <p > <img src="assets/cadAlunoUnico.png" width="50%" tittle=""> </p>
+
+A tela de "Conjunto de Alunos" permite à coordenação registrar grupos de estudantes de forma rápida e organizada. Como não foi possível integrar o sistema diretamente ao da UTFPR, essa funcionalidade foi desenvolvida para otimizar o processo manual. A coordenação deve baixar o arquivo CSV com os dados dos alunos, copiar as informações necessárias para uma planilha seguindo a ordem correta e, em seguida, colá-las no sistema, garantindo um cadastro eficiente e estruturado. Os dados devem ser inseridos no formato: RA, nome, telefone e e-mail, com cada aluno em uma linha e os campos separados por vírgulas.
 <p > <img src="assets/cadAlunoConjunto.png" width="50%" tittle=""> </p>
 
 
-- Ao clicar em "Excluir Vários", o usuário é levado para a tela de exclusão coletiva, onde pode remover múltiplos alunos cadastrados. Para isso, basta copiar e colar uma lista de RAs, um aluno por linhas.
-
+- Ao clicar em "Excluir Vários", o usuário é levado para a tela de exclusão coletiva, onde pode remover múltiplos alunos cadastrados. Para isso, basta copiar e colar uma lista de RAs, um aluno por linha.
 <p align="center"> <img src="assets/excluirAluno.png" width="100%" tittle=""> </p>
 
 
-### Cadastro de Professores 
-Na tela "Cadastro de Professores", a tela inicial exibe uma tabela com os professores já cadastrados, acompanhada de uma barra de pesquisa para localizar um professor pelo nome. Além disso, há um botão principal: "Cadastrar".
+### Alunos Inativos
+A tela 'Alunos Inativos' exibe a lista de alunos que foram deletados. Quando um aluno é removido, seus dados são armazenados nessa tela, permitindo a visualização de todas as observações registradas para ele. Além disso, tem a opção de reativar o aluno, restaurando seus dados ao sistema.
+<p align="center"> <img src="" width="100%" tittle=""> </p>
 
-Os professores cadastrados podem ter seus dados editados (exceto o e-mail) ou serem excluídos manualmente.
+
+### Cadastro de Professores 
+Na tela "Cadastro de Professores", a coordenação pode visualizar uma tabela com todos os professores já cadastrados, além de uma barra de pesquisa para localizar um docente pelo nome. Para adicionar um novo professor, basta clicar no botão "Cadastrar". Após o cadastro, o sistema envia automaticamente um e-mail ao professor com um link para redefinição de senha, garantindo um acesso seguro à plataforma.
+
+Os professores cadastrados podem ter seus dados editados pela coordenação (exceto o e-mail) ou serem excluídos manualmente.
 <p align="center"> <img src="assets/listaProfCad.png" width="100%" tittle=""> </p>
-- Ao clicar em "Cadastrar", o usuário é redirecionado para a tela de cadastro, onde pode optar por cadastrar um único professor manualmente ou realizar um cadastro coletivo. Para isso, basta copiar e colar os dados diretamente na tela, seguindo o formato: nome, telefone e e-mail, com um professor por linha e os dados separados por vírgulas.
+- Ao clicar em "Cadastrar", o usuário é redirecionado para a tela de cadastro, onde pode optar por cadastrar um único professor manualmente ou realizar um cadastro coletivo. 
 <p align="center"> <img src="assets/cadProfUnico.png" width="100%" tittle=""> </p>
+
+A tela de "Conjunto de Professores" permite à coordenação registrar grupos de professores de forma rápida e organizada. Como não foi possível integrar o sistema diretamente ao da UTFPR, essa funcionalidade foi desenvolvida para otimizar o processo manual. A coordenação deve baixar o arquivo CSV com os dados dos professores, copiar as informações necessárias para uma planilha seguindo a ordem correta e, em seguida, colá-las no sistema, garantindo um cadastro eficiente e estruturado. Os dados devem ser inseridos no formato: nome, telefone e e-mail, com um professor por linha e os dados separados por vírgulas.
 <p align="center"> <img src="assets/cadProfConjunto.png" width="100%" tittle=""> </p>
+
 
 ### Cadastro de Disciplinas 
 Na tela "Cadastro de Disciplinas", a tela inicial exibe uma tabela com as disciplinas já cadastradas, juntamente com uma barra de pesquisa para localizar uma disciplina pelo nome. Há também um botão principal: "Cadastrar".
@@ -219,20 +254,14 @@ Na tela "Cadastro de Disciplinas", a tela inicial exibe uma tabela com as discip
 As disciplinas cadastradas podem ter todos os seus dados editados, e a exclusão deve ser feita manualmente.
 <p align="center"> <img src="assets/listaDisc.png" width="100%" tittle=""> </p>
 
-Ao clicar em "Cadastrar", o usuário é redirecionado para a tela de cadastro, onde pode optar por cadastrar uma única disciplina manualmente ou realizar um cadastro coletivo. Para isso, basta copiar e colar os dados diretamente na tela, seguindo o formato: nome da disciplina e período, com uma disciplina por linha e os dados separados por vírgulas.
+Ao clicar em "Cadastrar", o usuário é redirecionado para a tela de cadastro, onde pode optar por cadastrar uma única disciplina manualmente ou realizar um cadastro coletivo. 
+
+Para isso, basta copiar e colar os dados diretamente na tela, seguindo o formato: nome da disciplina e período, com uma disciplina por linha e os dados separados por vírgulas.
 <p align="center"> <img src="assets/cadDiscUnico.png" width="100%" tittle=""> </p>
 
-Cadastro em conjunto segue a mesma lógica dos demais. 
+A tela de "Conjunto de Disciplinas" permite à coordenação registrar conjuntos de disciplinas de forma rápida e organizada. Como não foi possível integrar o sistema diretamente ao da UTFPR, essa funcionalidade foi desenvolvida para otimizar o processo manual. A coordenação deve baixar o arquivo CSV com os dados das disciplinas, copiar as informações necessárias para uma planilha seguindo a ordem correta e, em seguida, colá-las no sistema, garantindo um cadastro eficiente e estruturado. Os dados devem ser inseridos no formato: nome da disciplina e período (números de 1 a 4), com uma disciplina por linha e os dados separados por vírgulas.
+<p align="center"> <img src="assets/cadDiscConjunto.png" width="100%" tittle=""> </p>
 
-
-### Cadastro de Documentos 
-Na tela "Cadastro de Documentos", é possível visualizar uma lista com todos os documentos já cadastrados.
-
-Cada documento pode ser editado ou excluído individualmente, garantindo que as informações estejam sempre atualizadas.
-<p align="center"> <img src="" width="100%" tittle=""> </p>
-
-Ao clicar no botão "Cadastrar",o usuário é redirecionado para a tela de cadastro. Nessa tela, o usuário pode adicionar um novo documento informando: titulo do documento, descrição e link. 
-<p align="center"> <img src="assets/cadDoc.png" width="100%" tittle=""> </p>
 
 ### Cadastro do Calendário Acadêmico
 Na tela "Cadastro do Calendário Acadêmico", a coordenação cadastra o link do calendário, permitindo que, ao ser clicado na seção "Calendário Acadêmico" do sistema, o usuário seja redirecionado automaticamente para o documento ou página correspondente.
@@ -240,38 +269,52 @@ Na tela "Cadastro do Calendário Acadêmico", a coordenação cadastra o link do
 Caso precise editar o link posteriormente, basta acessar essa tela e atualizar a informação.
 <p align="center"> <img src="assets/cadCalendario.png" width="100%" tittle="calendario"> </p>
 
-### Grupos
-Na tela "Grupos", tanto o coordenador quanto o professor têm acesso. Essa tela permite a criação de grupos para monitoramento de alunos.
 
-Quando um aluno faz parte de um grupo e recebe uma observação de outro usuário, um e-mail é enviado automaticamente para o usuário que criou o grupo, notificando-o sobre a nova observação que o aluno recebeu.
+### Cadastro de Documentos 
+Na tela "Cadastro de Documentos", é possível visualizar uma lista com todos os documentos já cadastrados.
 
-Na tela principal de grupos, é possível visualizar todos os grupos cadastrados. Cada grupo exibe:
+<p align="center"> <img src="" width="100%" tittle=""> </p>
 
-- Nome do grupo
-- Data de criação
-- Alguns alunos do grupo
-- Número total de alunos
-- Também é possível editar ou excluir um grupo.
+Ao clicar no botão "Cadastrar",o usuário é redirecionado para a tela de cadastro. Nessa tela, o usuário pode adicionar um novo documento informando: titulo do documento, descrição e link. 
+<p align="center"> <img src="assets/cadDoc.png" width="100%" tittle=""> </p>
 
-<p align="center"> <img src="assets/todosGrupos.png" width="100%" tittle="grupos"> </p>
 
-Ao clicar no botão "Mostrar mais", o usuário é direcionado para uma tela detalhada do grupo, onde pode visualizar uma tabela completa contendo:
 
-- A lista de todos os alunos pertencentes ao grupo
-- A quantidade de observações recebidas por cada aluno
 
-Opções para:
-- Remover um aluno do grupo
-- Visualizar todas as observações registradas para um aluno
-- Adicionar uma nova observação diretamente no sistema
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Além disso, nesta tela, há um botão dedicado para editar o grupo, permitindo que o usuário altere informações como nome e composição do grupo.
-<p align="center"> <img src="assets/telaGrupo.png" width="100%" tittle=""> </p>
+# Arquitetura   --- LINK PARA UMA PAG DO BACK E UMA PRO FRONT DAS PASTAS 
 
-### Meu Perfil
-Na tela "Meu Perfil", tanto o coordenador quanto o professor têm acesso. Nesta tela, é possível:
+O sistema está estruturado com uma arquitetura de back-end e front-end. A Figura a seguir ilustra a arquitetura e as tecnologias utilizadas em cada parte.
 
-Visualizar o nome e o e-mail cadastrados
-Alterar a senha, garantindo mais segurança para o usuário
-As informações de nome e e-mail são apenas para consulta, enquanto a senha pode ser modificada conforme necessário.
-<p align="center"> <img src="assets/perfil.png" width="100%" tittle="meu perfil"> </p>
+<p align="center">
+    <img src="assets/arquitetura.png" width="100%" tittle="arquitetura">
+</p>
+
+
+# Tecnologias:   colocar os links do frobnt e back 
+
+O backend deste projeto foi desenvolvido com as seguintes tecnologias:
+
+- [Node.Js](https://nodejs.org/en/about)
+- [Prisma](https://www.prisma.io/)
+
+
+O frontend foi desenvolvido com as seguintes tecnologias:
+
+- [Next.js](https://nextjs.org)
+- [ReactJS](https://reactjs.org/)
+- [Axios](https://github.com/axios/axios)
+- [Tailwind CSS](https://tailwindcss.com)
+- [ESlint](https://eslint.org/)
+- [Remix](https://remixicon.com/)
+
+# Instalação
+
+### Backend 
+Clique no link abaixo para acessar o passo a passo da instalação do sistema
+
+[Instalação](Backend/readme.md)
+
+
+### Frontend 
