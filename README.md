@@ -235,7 +235,7 @@ Os alunos cadastrados podem ter seus dados editados (exceto o RA) ou serem exclu
 <p align="center"> <img src="assets/listaAlunosCad.png" width="100%" tittle="lista dos alunos"> </p>
 
 - Ao clicar em "Cadastrar", o usuário é redirecionado para a tela de cadastro, onde pode optar por cadastrar um único aluno manualmente ou realizar um cadastro coletivo. 
-<p > <img src="assets/cadAlunoUnico.png" width="50%" tittle=""> </p>
+<p > <img src="assets/cadAlunoUnico.png" width="100%" tittle=""> </p>
 
 A tela de "Conjunto de Alunos" permite à coordenação registrar grupos de estudantes de forma rápida e organizada. Como não foi possível integrar o sistema diretamente ao da UTFPR, essa funcionalidade foi desenvolvida para otimizar o processo manual. A coordenação deve baixar o arquivo CSV com os dados dos alunos, copiar as informações necessárias para uma planilha seguindo a ordem correta e, em seguida, colá-las no sistema, garantindo um cadastro eficiente e estruturado. Os dados devem ser inseridos no formato: RA, nome, telefone e e-mail, com cada aluno em uma linha e os campos separados por vírgulas.
 <p > <img src="assets/cadAlunoConjunto.png" width="50%" tittle=""> </p>
@@ -294,7 +294,7 @@ Ao clicar no botão "Cadastrar",o usuário é redirecionado para a tela de cadas
 
 ## Tela de Login e Recuperação de Senha
 A tela de login permite que usuários acessem o sistema utilizando suas credenciais. 
-<p align="center"> <img src="assets/login.png.png" width="100%" tittle=""> </p>
+<p align="center"> <img src="assets/login.png" width="100%" tittle=""> </p>
 
 Caso o usuário esqueça a senha, há a opção de redefinição, onde ele informa seu e-mail cadastrado e recebe um link para criar uma nova senha. 
 <p align="center"> <img src="assets/recuperacaoSenha.png" width="100%" tittle=""> </p>
