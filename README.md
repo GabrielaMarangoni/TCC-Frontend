@@ -33,7 +33,7 @@ Este sistema foi desenvolvido para auxilar a Coordenação e os Professores do C
 
 
 
-## Introdução
+# INTRODUÇÃO
 
 A Universidade Tecnológica Federal do Paraná (UTFPR), criada em 1909 como Escola de Aprendizes e Artífices, passou por importantes transformações, tornando-se Centro Federal de Educação Tecnológica (CEFET-PR) em 1978 e Universidade Tecnológica em 2005. Apesar da mudança, o campus de Campo Mourão manteve o ensino técnico, atualmente ofertado no Curso Técnico Integrado em Informática para Internet, que combina disciplinas do Ensino Médio com formação técnica.
 
@@ -94,7 +94,7 @@ A seguir, são detalhadas as principais ações disponíveis no sistema:
 - **Adicionar uma observação ao aluno** (Professores e Coordenação): Registra observações sobre o desempenho e comportamento dos alunos.
 
 
-# Banco de Dados
+# BANCO DE DADOS
 
 O banco de dados foi modelado para armazenar e gerenciar informações sobre usuários, professores, alunos, disciplinas, calendário acadêmico, grupos de monitoramento e documentos.
 
@@ -113,7 +113,8 @@ A modelagem segue boas práticas de normalização, utilizando UUIDs para garant
 
 
 
-# Interface do Sistema de Gestão para Observações Pedagógicas: Telas e Finalidades
+# INTERFACE DO SISTEMA DE GESTÃO PARA OBSERVAÇÕES PEDAGÓGICAS: TELAS E FINALIDADES
+
 O Sistema de Gestão para Observações Pedagógicas foi desenvolvido para proporcionar um ambiente organizado e funcional, permitindo que professores e coordenação acompanhem o desempenho dos alunos.
 
 ## Visão do professor
@@ -277,25 +278,22 @@ Ao clicar no botão "Cadastrar",o usuário é redirecionado para a tela de cadas
 
 
 
+# ARQUITETURA 
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-# Arquitetura   --- LINK PARA UMA PAG DO BACK E UMA PRO FRONT DAS PASTAS 
-
-O sistema está estruturado com uma arquitetura de back-end e front-end. A Figura a seguir ilustra a arquitetura e as tecnologias utilizadas em cada parte.
+O sistema está estruturado com uma arquitetura de backend e frontend. A Figura a seguir ilustra a arquitetura e as tecnologias utilizadas em cada parte.
 
 <p align="center">
     <img src="assets/arquitetura.png" width="100%" tittle="arquitetura">
 </p>
 
 
-# Tecnologias:   colocar os links do frobnt e back 
-
+### Tecnologias:  
 O backend deste projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Node.Js](https://nodejs.org/en/about)
 - [Prisma](https://www.prisma.io/)
 
+Para entender melhor sobre as tecnologias acima, acesse [aqui.](https://github.com/GabrielaMarangoni/TCC-Backend/blob/main/Backend/readme.md#tecnologias-utilizadas)
 
 O frontend foi desenvolvido com as seguintes tecnologias:
 
@@ -306,12 +304,15 @@ O frontend foi desenvolvido com as seguintes tecnologias:
 - [ESlint](https://eslint.org/)
 - [Remix](https://remixicon.com/)
 
-# Instalação
+Para entender melhor sobre as tecnologias acima, acesse [aqui.](https://github.com/GabrielaMarangoni/TCC-Frontend/blob/main/frontend/README.md#tecnologias-utilizadas)
+
+# INSTALAÇÃO
 
 ### Backend 
-Clique no link abaixo para acessar o passo a passo da instalação do sistema
-
-[Instalação](Backend/readme.md)
+Clique no link abaixo para acessar o passo a passo da instalação do sistema.
+[Instalação](https://github.com/GabrielaMarangoni/TCC-Backend/blob/main/Backend/readme.md#instalação)
 
 
 ### Frontend 
+Clique no link abaixo para acessar o passo a passo da instalação do sistema.
+[Instalação](https://github.com/GabrielaMarangoni/TCC-Frontend/blob/main/frontend/README.md#instalação)
