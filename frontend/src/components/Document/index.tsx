@@ -57,10 +57,10 @@ function Document({ title, description, url }: DocumentProps) {
               <div className="flex justify-end space-x-5 mt-2">
                 <AlignLeft className="mt-5" size={20}/>
                 {/*  nao to conseguindo fazer os botoes ficarem no final da div */}
-                  <div className="flex justify-end space-x-5"> 
+                {/*   <div className="flex justify-end space-x-5"> 
                     <button className="bg-warning text-white px-3 py-2 rounded ri-delete-bin-fill"/>
                     <button className="bg-button text-white px-3 py-2 rounded ri-edit-box-fill"/>
-                  </div>
+                  </div> */}
 
               </div>
             </TooltipTrigger>
