@@ -33,10 +33,7 @@ Este sistema foi desenvolvido para auxilar a Coordenação e os Professores do C
 
 
 
-
-
-
-# Introdução
+## Introdução
 
 A Universidade Tecnológica Federal do Paraná (UTFPR), criada em 1909 como Escola de Aprendizes e Artífices, passou por importantes transformações, tornando-se Centro Federal de Educação Tecnológica (CEFET-PR) em 1978 e Universidade Tecnológica em 2005. Apesar da mudança, o campus de Campo Mourão manteve o ensino técnico, atualmente ofertado no Curso Técnico Integrado em Informática para Internet, que combina disciplinas do Ensino Médio com formação técnica.
 
@@ -76,7 +73,7 @@ Com o Sistema de Gestão para Observações Pedagógicas, esse professor pode:
 
 Dessa forma, o sistema permite um acompanhamento mais estruturado e eficaz dos alunos autistas, garantindo que cada professor tenha acesso às informações necessárias para oferecer o suporte adequado, mesmo que esses estudantes estejam distribuídos em diferentes períodos e disciplinas.
 
-# DOCUMENTAÇÃO
+## DOCUMENTAÇÃO
 
 
 
