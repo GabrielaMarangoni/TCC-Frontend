@@ -5,7 +5,7 @@
 <p align="center">
     Trabalho de Conclusão do Curso de Bacharelado em Ciência da Computação.<br>
     Gabriela Marangoni Radigonda<br>
-    Orientador: Prof. Rafael Liberato<br>
+    Orientador: Prof. Dr. Rafael Liberato Roberto<br>
     <i>Fevereiro de 2025</i> 
 </p>
 <br>
