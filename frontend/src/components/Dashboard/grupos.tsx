@@ -11,9 +11,19 @@ export default function DashboardGrupos({ data }: { data: any[] }) {
       <div className="flex flex-col px-5 w-full gap-3 h-full">
         <h1 className={textoGrupo}>Grupos</h1>
         <div className="overflow-y-auto h-[calc(100%-3rem)] w-full space-y-3 px-3">
-          {data?.map((el, i) => (
+          {/* {data?.map((el, i) => (
             <ButtonGrupo key={i} data={el} last={data.length === i +1} />
-          ))}
+          ))} */}
+          {data.length > 0 ? (
+                    data?.map((el, i) => (
+                      <ButtonGrupo key={i} data={el} last={data.length === i +1} />
+         
+                    ))
+                  ) : (
+                    <div className="text-gray-500 text-center text-lg ">
+                      Nenhuma observação disponível no momento.
+                    </div>
+                  )}
         </div>
       </div>
     </div>
